@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guided developmental math and reading and writing practice for McLennan Community College students.">
+  <meta name="theme-color" content="#003e6f">
+  <title>MCC Skills Coach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23003e6f'/%3E%3Cpath d='M12 46V18h9l11 16 11-16h9v28h-9V32L32 48 21 32v14z' fill='%23fff'/%3E%3Cpath d='M12 52h40v4H12z' fill='%23ff6600'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand-wrap">
+      <a class="brand" href="#/home" aria-label="MCC Skills Coach home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span><strong>MCC</strong><small>Skills Coach</small></span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#/home" data-nav="home">Home</a>
+        <a href="#/math" data-nav="math">Math</a>
+        <a href="#/inrw" data-nav="inrw">Reading &amp; Writing</a>
+        <a href="#/progress" data-nav="progress">My Progress</a>
+        <a class="nav-help" href="#/tutoring" data-nav="tutoring">Meet With a Tutor</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="progress-announcer" class="sr-only" aria-live="polite"></div>
+  <main id="main-content" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>MCC Skills Coach</strong>
+      <p>Practice foundational skills at your pace. This site does not replace your instructor or a tutor.</p>
+    </div>
+    <div>
+      <strong>Academic Support &amp; Tutoring</strong>
+      <p><a href="tel:+12542998500">254-299-8500</a> · <a href="mailto:ast@mclennan.edu">ast@mclennan.edu</a></p>
+    </div>
+  </footer>
+
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-header">
+      <div>
+        <span class="eyebrow">Guided help</span>
+        <h2 id="help-title">Let’s work through it</h2>
+      </div>
+      <button class="icon-button" id="close-help" type="button" aria-label="Close guided help">×</button>
+    </div>
+    <div id="help-content"></div>
+  </dialog>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
